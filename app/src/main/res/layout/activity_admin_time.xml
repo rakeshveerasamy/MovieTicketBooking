@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutbackground2"
+    tools:context=".adminTime">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:background="@drawable/layoutbackground">
+            <TextView
+                android:id="@+id/text15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Welcome Admin !!"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                android:textColor="@color/pink"/>
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text15"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:onClick="displayPage"
+                android:text="Display Movies List"
+                android:textColor="@color/white"
+                android:background="@drawable/background"/>
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button10"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="insertPage"
+                android:text="Insert Movie"
+                android:textColor="@color/white"
+                android:background="@drawable/background"/>
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button11"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="updatePage"
+                android:text="Update Movie"
+                android:textColor="@color/white"
+                android:background="@drawable/background"/>
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button12"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="deletePage"
+                android:text="Delete Movie"
+                android:textColor="@color/white"
+                android:background="@drawable/background"/>
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/button13"
+                android:layout_centerHorizontal="true"
+                android:onClick="logoutPage"
+                android:text="Logout"
+                android:textColor="@color/splashScreenText"
+                android:background="@drawable/buttonbackground"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

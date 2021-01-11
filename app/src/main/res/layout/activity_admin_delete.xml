@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutbackground2"
+    tools:context=".adminDelete">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/layoutbackground">
+
+            <TextView
+                android:id="@+id/text19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movies At Us..."
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/pink"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text19"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:onClick="displayMovie"
+                android:text="Movies list"
+                android:textColor="@color/splashScreenText"
+                android:background="@drawable/buttonbackground"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/text20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button16"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="To delete any movies from the list enter the movie id that you want to delete"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@drawable/background"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text20"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:ems="12"
+                android:hint="Enter the movie id"
+                android:inputType="textPersonName"/>
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText20"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:onClick="deleteMovie"
+                android:text="Delete"
+                android:textColor="@color/splashScreenText"
+                android:background="@drawable/buttonbackground"/>
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/button17"
+                android:layout_centerHorizontal="true"
+                android:onClick="Back"
+                android:text="Back"
+                android:textColor="@color/splashScreenText"
+                android:background="@drawable/buttonbackground"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

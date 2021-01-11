@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to movie  ticket booking"
+        android:textAlignment="center"
+        android:textColor="@color/splashScreenText"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/text3"
+       android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/button2"
+            android:padding="20dp"
+            android:onClick="userLogin"
+            android:text="User login"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/background"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:padding="20dp"
+            android:onClick="adminLogin"
+            android:text="Admin login"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/background"/>
+
+   </RelativeLayout>
+</RelativeLayout>

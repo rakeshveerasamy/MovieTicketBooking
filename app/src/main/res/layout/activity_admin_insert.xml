@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutbackground2"
+    android:orientation="vertical"
+    tools:context=".adminInsert">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layoutbackground"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/text18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insert Movie :--"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/pink"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text18"
+                android:ems="12"
+                android:hint="Enter the movie name"
+                android:inputType="textPersonName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText16"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Select Date"
+                android:textColor="@color/splashScreenText"
+                android:background="@drawable/buttonbackground"
+                android:onClick="buttonDate"
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/text23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button24"
+                android:text="Selected Date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/pink"
+                android:textStyle="bold|italic"/>
+
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text23"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Select Time"
+                android:textColor="@color/splashScreenText"
+                android:background="@drawable/buttonbackground"
+                android:onClick="button"
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/text21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button22"
+                android:text="Selected time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/pink"
+                android:textStyle="bold|italic"/>
+
+            <EditText
+                android:id="@+id/editText19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text21"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:ems="12"
+                android:hint="Enter the language"
+                android:inputType="textPersonName"/>
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText19"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="insertMovie"
+                android:text="Insert"
+                android:textColor="@color/splashScreenText"
+                android:background="@drawable/buttonbackground"/>
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/button15"
+                android:layout_centerHorizontal="true"
+                android:onClick="Back"
+                android:text="Back"
+                android:textColor="@color/splashScreenText"
+                android:background="@drawable/buttonbackground"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

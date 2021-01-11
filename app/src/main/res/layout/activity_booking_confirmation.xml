@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutbackground2"
+    tools:context=".bookingConfirmation">
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true"
+       android:padding="10dp"
+       android:background="@drawable/layoutbackground">
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Successfully Submited......"
+            android:textSize="24sp"
+            android:textColor="@color/pink"
+            android:textStyle="bold|italic" />
+       <TextView
+           android:id="@+id/text10"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/text8"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="10dp"
+           android:textSize="24sp"
+           android:textStyle="italic"
+           android:textColor="@color/pink"/>
+       <TextView
+           android:id="@+id/text9"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="40dp"
+           android:layout_below="@+id/text10"
+           android:text="Continue your payment..."
+           android:textColor="@color/splashScreenText"
+           android:textSize="30sp" />
+
+       <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="paymentMode"
+            android:text="payment"
+            android:textColor="@color/splashScreenText"
+            android:background="@drawable/buttonbackground"/>
+   </RelativeLayout>
+</RelativeLayout>
